@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section>
+        <header>
+            <h2>{{ drinks_title }}</h2>
+        </header>
+        <article>
+            <img src="{{ url_for('static', filename='images/drinks/strawberry-exotica.jpeg') }}" alt="a bottle of straw berry and banana juice with chopped straw berries and banana on a brown round cutting board. strawberries and chopped bananas are surroundingg the bottle of juice." width="300">
+            <p>exotica straw berry and banana</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/drinks/mango-passion-exotica.jpeg') }}" alt="a bottle of mango and passion fruit drinks with slice passion fruit surrounding it and a basket of mangoes in the background." width="300">
+            <p>exotica mango and passion</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/drinks/guava-pineapple-exotica.jpeg') }}" alt="a bottle of mango and passion fruit drinks with slice passion fruit and mango surrounding the bottle." width="300">
+            <p>exotica guava pineapple</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/drinks/passion-fruit-exotica.jpeg') }}" alt="a glass filled with passion fruit drink, topped with a slice of passion fruit on top and a black straw to drink." width="300">
+            <p>exotica passion fruit</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/drinks/homemade-passion-fruit.jpeg') }}" alt="two bottles filled with passion fruit juice on a brown cutting board with diced and whole passion fruits around it." width="300">
+            <p>homemade passion fruit</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/drinks/homemade-ginger-pineapple.jpeg') }}" alt="homemade ginger pineapple juice in a bottle sitting on a brown cutting booard with a slice of pineapple and ginger around it." width="300">
+            <p>pineapple ginger</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/drinks/dg-jamaican-champagne.jpeg') }}" alt="a bottle of d&g kola Champagne in a white background." width="300">
+            <p>D&G Kola Champagne</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/drinks/dg-jamaican-pineapple.jpeg') }}" alt="a bottle of d&g pineapple soda in a white background." width="300">
+            <p>D&G Pineapple Soda</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/drinks/exotica-carrot-mango-juice.jpeg') }}" alt="a glass of carrot mango juice in a glass sitting on a brown cutting board with mango and carrots around." width="300">
+            <p>exotica carrot mango juice</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/drinks/i-cee-big-red-2-liter.jpeg') }}" alt="2 liter icee big red standing on snow with planets in the background and star wars theme machines and buildings in the background along with two jedi's and a cat." width="300">
+            <p>2 liter i-cee big red</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/drinks/i-cee-ginger-beer-2-liter.jpeg') }}" alt="2 liter icee big red standing on snow with planets in the background and star wars theme machines and buildings in the background along with two jedi's and a cat." width="300">
+            <p>2 liter i-cee ginger beer</p>
+        </article>
+    </section>
+{% endblock %}

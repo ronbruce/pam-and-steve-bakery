@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section>
+        <article>
+            <div>
+                <img src="{{ url_for('static', filename='images/bread-for-hero.jpg') }}" alt="freshly baked loaves of bread on a wooden cutting board" width="1000">
+            </div>
+        </article>
+        <article>
+            <h1>savor the flavors of home</h1>
+            <p>authentic homemade guyanese cuisine.</p>
+            <a href="#" class="btn">order now</a>
+        </article>
+        </div>
+    </section>
+    <!-- Main content for things like updates, new products, specials and more. -->
+    <section>
+        <article>
+            <div>
+            <a href="/home/shipping"><img src="{{ url_for('static', filename='images/kai-pilger-unsplash.jpg') }}" alt="a delivery bycyclist riding with a green ubereats bag on his back. people are walking in the background." width="300"></a> 
+            </div>
+        </article>
+        <article>
+            <h2>our shipping services</h2>
+            <p>we're <strong>committed</strong> to ensuring <strong>swift</strong> and <strong>secure</strong> delivery of your orders and shipments. with our efficient logistics network, we guarantee prompt and safe delivery to your doorstep, every time.</p>
+            <a href="/home/shipping" class="btn">learn More</a>
+        </article>
+    </section>
+    <!-- Section for Sauces and seasoning. The content is wrapped in main-content for styling. -->
+    <section>
+        <article>
+            <div>
+            <a href="/home/saucesSeasoning"><img src="{{ url_for('static', filename='images/heather-ford-unsplash.jpg') }}" alt="red sauce in a white bowl and three white spoons with seasonings placed on a light grey woven cloth, laying on a white surface." width="300"></a> 
+        </article>
+        <article>
+            <h2>our sauces and seasoning</h2>
+            <p>indulge in the <em>rich</em> flavors of our <em>authentic</em> guyanese sauces and seasonings. crafted with care and using <em>traditional</em> recipes, our sauces and seasonings add an <em>exquisite</em> touch to your favorite dishes. elevate your culinary experience with our <em>handcrafted</em> blends, <em>meticulously</em> crafted to capture the essence of guyanese cuisine.</p>
+            <a href="/home/saucesSeasoning" class="btn">learn more</a>
+        </article>
+    </section>
+{% endblock %}

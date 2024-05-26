@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section>
+        <header>
+            <h2>{{ catering_title }}</h2>
+        </header>
+        <article>
+            <img src="{{ url_for('static', filename='images/catering/roti-catering.jpeg') }}" alt="a stack of steaming freshly baked roti nicely nested inside a basket." width="300">
+            <p>roti</p>
+            <button type="submit">contact store</button>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/catering/beef-pattie.jpeg') }}" alt=" a bowl of golden brown beef pattie sitting in a white bowl on a table with a white blue stripped table cloth on the side." width="300">
+            <p>beef patties</p>
+            <button type="submit">contact store</button>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/catering/pholouri.jpeg') }}" alt="a bowl of golden brown pholouri bunched up in a white bowl with a small bowl of sauce sitting in the middle of the pholouri on a table." width="300">
+            <p>pholouri</p>
+            <button type="submit">contact store</button>
+        </article>
+    </section>
+{% endblock %}

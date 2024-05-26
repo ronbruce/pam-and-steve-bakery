@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/264bd81da7.js" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='javascript/script.js') }}"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">
+            <img src="{{ url_for('static', filename='images/ps-bakery-logo.PNG') }}" alt="image of p&s bakery logo.">
+        </a>
+        <nav class="navbar">        
+            <div class="menu-dropdown">
+                <a href="#" class="menu-btn">Menu <i class="fas fa-angle-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="/menu/breakfast">breakfast</a>
+                    <a href="/menu/lunch">lunch</a>
+                    <a href="/menu/snacks">snacks</a>
+                    <a href="/menu/bread">bread</a>
+                    <a href="/menu/pastries">pastries</a>
+                    <a href="/menu/sweetsTreats">sweats & treats</a>
+                    <a href="/menu/drinks">drinks</a>
+                </div>
+            </div>
+            <a href="/home/catering">catering</a>
+            <a href="/home/locations">locations</a>
+            <a href="/home/aboutGuyaneseFood">about guyanese food</a>
+            <a href="/home/form">sign up for email</a> 
+        </nav>
+        <div class="icons">
+            <div class="search-icons"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="cart-icons"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="menu-icons"><i class="fa-solid fa-bars"></i></i></div>
+        </div>
+        <!-- Search Form -->
+        <div class="search-form">
+            <input type="search" name="search" id="search-bar" placeholder="Search the menu...">
+            <label for="search-bar" class="fa-solid fa-magnifying-glass"></label>
+        </div>
+        <!-- Cart Items -->
+        <div class="cart-items-container">
+            {% for item in cart_items %}
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="{{ url_for('static', filename=item.image_url) }}">
+                <h3>{{ item.name }}</h3>
+                <div class="price">{{ item.price }}</div>
+            </div>
+            {% endfor %}
+            <a href="" class="btn">Order Now</a>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="hero">
+            <h3>Savor the Flavors of Home</h3>
+            <p>Authentic homemade Guyanese cuisine.</p>
+            <a href="" class="btn">Order Now</a>
+        </div>
+    </section>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer">
+                <ul>
+                    <li><a href="/footer/language">language</a></li>
+                    <li><a href="/footer/aboutUs">about us</a></li>
+                    <li><a href="/footer/contact">contact us</a></li>
+                    <li><a href="/footer/FAQ">faq</a></li>
+                </ul>
+            </div>
+            <div class="credits">
+                <p>created by <a href="#" aria-label="instagram">ron bruce</a> | all rights reserved.</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/psbakerynyc/" aria-label="instagram"><i class="fa-brands fa-instagram"><span class="sr-only">instagram</span></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

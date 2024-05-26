@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section>
+        <header>
+            <h2>{{ sweets_treats_title }}</h2>
+        </header>
+        <article>
+            <img src="{{ url_for('static', filename='images/sweets-treats/milk-fudge.jpeg') }}" alt="milk fudged snacked on top of each other on a white plate." width="300">
+            <p>milk fudge</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/sweets-treats/mithai.jpeg') }}" alt="white sugar coated mithai sticks packed into a white bowl on a table." width="300">
+            <p>mithai</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/sweets-treats/cassava-pone.jpeg') }}" alt="golden cassava sqaure shapped pone on a cutting board." width="300">
+            <p>cassava pone</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/sweets-treats/salara.jpeg') }}" alt="diced salara with red coconut filling diagnally laid out on a baking sheet sprinkled with white sugar." width="300">
+            <p>salara</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/sweets-treats/slice-fruit-cake.JPG') }}" alt="a slice of black fruit cake with two cherries on top sitting on a brown plate on a table." width="300">
+            <p>slice fruit cake</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/sweets-treats/sponge-cake.jpeg') }}" alt="a slice of golden sponge cake sitting on a white plate with a fork next to it." width="300">
+            <p>sponge cake</p>
+        </article>
+    </section>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section>
+        <header>
+            <h2>{{ about_us_title }}</h2>
+        </header>
+        <img src="{{ url_for('static', filename='images/pam-steve-about-us.png') }}" alt="a picture of pam and steve standing in their bakery next to a showcase of of baked goods." width="300">
+        <h3>A Passion for Baking: Pam and Steve's Story</h3>
+        <p>Pam and Steve, a dynamic Guyanese couple based in the United States, have been infusing a taste of home and a touch of sophistication into Brooklyn, New York, since 1998. Their establishment, Pam and Steve Bakery and Restaurant, is a multifaceted venture offering an enticing array of baked goods and prepared meals.</p>
+        <p>The bakery proudly presents a tantalizing selection of "homemade" breads, cakes, and pastries, showcasing both beloved traditional recipes and innovative creations. Over the years, it has cultivated a dedicated following that transcends the immediate Guyanese community.</p>
+        <p>Pam and Steve's reach extends beyond Brooklyn; they also operate a similar bakery in Guyana, directly serving the local population. Their journey is one defined by shared passion and an entrepreneurial spirit.</p>
+        <p>Pam, a resident of the United States for over four decades, initially began baking and selling pastries as a means to supplement her income in the bustling environment of New York City. Steve, who arrived in the US later, serendipitously crossed paths with Pam in a Brooklyn laundromat in 1997. Their partnership, Steve explains, was born out of a shared desire to chart their own course.</p>
+        <p>Pam and Steve Bakery and Restaurant stands nestled in a working-class neighborhood on the corner of Church and Utica. With a loyal clientele comprising Guyanese, Caribbean, and American patrons alike, their establishment epitomizes a fusion of culinary excellence and community spirit.</p>
+    </section>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section>
+        <header>
+            <h2>{{ pastries_title }}</h2>
+        </header>
+        <article>
+            <img src="{{ url_for('static', filename='images/pastries/coconut-buns.jpeg') }}" alt="coconut buns with a red cherry nested on top in middle of each buns." width="300">
+            <p>coconut buns</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/pastries/beef-patties.jpeg') }}" alt="a row of round golden brown beef patties sitting on a white rectangular plate on a table" width="300">
+            <p>beef patties</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/pastries/cheese-roll.jpeg') }}" alt="golden brown cheese roll stacked on a white plate sitting on a grey striped cloth on a grey wooden table." width="300">
+            <p>cheese roll</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/pastries/pinetart.jpeg') }}" alt="golden brown pinetarts laid on a black grill on a table." width="300">
+            <p>pinetart</p>
+        </article>
+    </section>
+{% endblock %}

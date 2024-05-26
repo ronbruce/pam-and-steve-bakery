@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section>
+        <header>
+            <h2>{{ bread_title }}</h2>
+        </header>
+        <article>
+            <img src="{{ url_for('static', filename='images/bread/plait-bread.jpg') }}" alt="freshly baked plaited bread." width="300">
+            <p>plait bread</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/bread/whole-wheat-bread.jpg') }}" alt="wholesome and nutritious whole wheat bread, baked fresh with hearty whole grains and a hint of sweetness. Enjoy its soft texture and earthy flavor, perfect for sandwiches, toasts, or simply eat it with guyanese pepperpot." width="300">
+            <p>whole wheat bread</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/bread/butterflaps.jpeg') }}" alt="savor the rich taste and soft texture of our butterbread. perfect for any time of day, it's a delightful treat you won't want to miss." width="300">
+            <p>butter flap</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/bread/roti.jpg') }}" alt="golden-brown, flaky guyanese roti, a staple of Caribbean cuisine, served piping hot and ready to accompany your favorite curries. made from a blend of flour, water, and spices, each bite offers a delightful mix of savory flavors and a satisfying texture." width="300">
+            <p>roti</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/bread/puri.jpg') }}" alt="experience the authentic taste of guyanese puri, a traditional delicacy that combines light, airy texture with a hint of sweetness. savor the crispness as you bite into each golden-fried puri, perfect for pairing with savory curries or enjoying on its own." width="300">
+            <p>puri</p>
+        </article>
+        <article>
+            <img src="{{ url_for('static', filename='images/bread/cross-buns.jpg') }}" alt="indulge in the timeless delight of cross buns, featuring a delicate balance of spices. These soft, fragrant buns are a cherished treat, perfect for breakfast with cheese or easter gift." width="300">
+            <p>cross buns</p>
+        </article>
+    </section>
+{% endblock %}

@@ -1,0 +1,185 @@
+/* custom reusable colors */
+:root {
+    --main-color:#00c9a5;
+    --nav-color: #308D46;
+    --bg-color: #e8f3f1;
+    --black: #2f4858;
+    --card-color: #93C572;
+    --btn-color: #8BC34A;
+}
+
+/* generic styling */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* All elements in the header */
+.header {
+    background-color: var(--bg-color);
+    display: flex; /* Aligns my content in a row */
+    justify-content: space-around;
+    align-items: center; /* centers my content */
+    padding: 1.5rem 7%; /* Adjust top and bottom (1.5rem) and left and right (7%) or header.*/
+    position: fixed; /* fixed the header in one position so when i scroll down in the page it doesn't scroll with the web page.*/
+    top: 0; /* start the contents of the webpage at the top left of the screen */
+    right: 0; /* start at the left of the browser and end on the right corner */
+    left: 0; /* start at the right of the browser and end at the left corner */   
+    border-bottom: 1px solid #FFD700; /* Add a border to the bottom of the navbar */ 
+}
+
+.logo img{
+    height: 6rem;
+   
+}
+
+.navbar a {
+    color: var(--nav-color);
+    font-size: 1.3rem;
+    margin: 0 1rem; /* 1rem space in between the text from left to right */
+}
+
+.navbar a:hover {
+    color: var(--black);
+    border-bottom: .1rem solid var(--black);
+    padding-bottom: 0.2rem;
+}
+
+/* Icons */
+.icons {
+    display: flex;
+}
+
+.icons div {
+    color: var(--nav-color);
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-left: 2rem; /* setting space between icons */
+}
+
+.icons div:hover {
+    color: var(--btn-color);  
+}
+
+.icons .menu-icons {
+    display: none; /* menu icons set to none because I only want to display this icons on a tablet or smartphone and not one  browser */
+}
+
+/* Dropdown menu with breakfast, snacks, lunch, etc. */
+.menu-dropdown {
+    position: relative; /* position my menu with the carot down inline with the other anchor elements in my navbar */
+    display: inline-block; /* setting it inline */
+}
+
+.dropdown-menu {
+    background-color: #fff; 
+    display: none; /* hides the drowndown menu */
+    position: absolute; /* keeps the elements behind the dropdown in place so they won't stretch out when i hover over my menu */
+    min-width: 160px; /* adjust the width of my dropdown menu */
+    /* z-index: 1; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* sets a subtle shadow in the back of any content that the menu is over */
+}
+
+.menu-dropdown:hover .dropdown-menu {
+    display: block; /* allows the menu to be displayed whenever I hover over it */
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px; /* sets the space between the anchor elements */
+    text-decoration: none;
+    display: block;
+}
+
+/* Search bar, input, and label */
+.search-form {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    position: absolute; 
+    top: 115%; /* this means start and stop where header section ends. */
+    right: -100%; 
+    width: 50rem; /* adjust the width */
+    height: 6rem; 
+}
+
+.search-form.active {
+    right: 7%; /* when we click the search */
+}
+
+.search-form input {
+    width: 100%; /* 100% percent of the width of its parent, in this case the search bar */
+    height: 100%; /* 100% percent of the height of its parent, in this case the search bar */
+    padding: 1.5rem; /* adjust search input space from the search form */
+    text-transform: none; /* stops text from capitalizing since I defined a generic style for all text to be capitalized */
+    font-size: 1.5rem;
+    color: var(--black) /* change the font color of the input text */
+}
+
+.search-form label {
+   color: var(--black);
+   font-size: 1.6rem; /* adjusting the size of the search icon */
+   padding-right: 1.5rem;
+   cursor: pointer;
+}
+
+.search-form label:hover {
+    color: var(--btn-color);
+}
+
+/* Cart Section */
+/* The white container of the cart */
+.cart-items-container {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50rem;
+    background-color: #fff;
+    height: 88vh;
+    border: solid 1px black; /* border just to see where the container ends */
+    padding: 0.8rem;
+}
+
+/* items in the cart */
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0; /* top and bottom 2rem and left and right is 0 */
+    border: solid 1px black;
+    position: relative;
+    gap: 1rem;
+}
+
+/* Temporary for image size */
+.cart-item img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* Positioning the x within the cart */
+.cart-item span {
+    position: absolute;
+    top: 10%;
+    right: 2%; /* from the right side move 2% to the right */
+    font-size: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.cart-item span:hover {
+    color: var(--main-color);
+}
