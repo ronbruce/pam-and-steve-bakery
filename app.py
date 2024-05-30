@@ -12,9 +12,6 @@ app = Flask(__name__,
             static_url_path='',
             static_folder='static',
             template_folder='templates')
-#TODO 
-# move secret key into a .env file.
-app.config["SECRET_KEY"] = '51e5bbc093285a7ff86bfd0bb8bbd69404baa3f8'
 
 client = MongoClient('mongodb://localhost:27017/')
 # This is the MongoDB database for bakery items.
