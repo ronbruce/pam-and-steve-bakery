@@ -9,7 +9,27 @@ of the screen as intended when clicked.
 document.addEventListener("DOMContentLoaded", () => {
     const searchIcon = document.querySelector('.search-icons')
     const searchForm = document.querySelector('.search-form')
+    
     searchIcon.addEventListener('click', () => {
         searchForm.classList.add('active');
+        cartItemsContainer.classList.remove('active');
     });
+
+    const cartIcons = document.querySelector('.cart-icons')
+    const cartItemsContainer = document.querySelector('.cart-items-container')
+
+    cartIcons.addEventListener('click', () => {
+        cartItemsContainer.classList.add('active');
+        searchForm.classList.remove('active');
+    });
+    
+    // This function will run once the entire page (including all scripts, images, etc.) has loaded
+    window.onload = function() {
+        // Get the height of the header element
+        var headerHeight = document.querySelector('.header').offsetHeight;
+        // Set the top margin of the home section to be the same as the height of the header
+        // This aligns the top of the home section with the bottom of the header
+        document.querySelector('.home').style.marginTop = headerHeight + 'px';
+    }
+    
 })

@@ -35,7 +35,7 @@ bakery_items = [
         "name": "whole wheat tennis roll",
         "description": "experience the authentic taste of guyanese puri, a traditional delicacy that combines light, airy texture with a hint of sweetness. savor the crispness as you bite into each golden-fried puri, perfect for pairing with savory curries or enjoying on its own.",
         "price": 2.50,
-        "category": "flatbread",
+        "category": "bread",
         "vegan": True,
         "image_url": "images/bread/whole-wheat-roll.jpeg"
     },  
@@ -43,7 +43,7 @@ bakery_items = [
         "name": "roti",
         "description": "experience the authentic taste of guyanese puri, a traditional delicacy that combines light, airy texture with a hint of sweetness. savor the crispness as you bite into each golden-fried puri, perfect for pairing with savory curries or enjoying on its own.",
         "price": 2.50,
-        "category": "flatbread",
+        "category": "bread",
         "vegan": True,
         "image_url": "images/bread/roti.jpg"
     },  
@@ -51,7 +51,7 @@ bakery_items = [
         "name": "puri",
         "description": "our flaky, golden dhal puri is a flatbread stuffed with a savory split pea filling, seasoned to perfection. Enjoy it on its own or pair it with your favorite curry  or chutney for a delightful and authentic caribbean meal.",
         "price": 2.50,
-        "category": "flatbread",
+        "category": "bread",
         "vegan": True,
         "image_url": "images/bread/puri.jpg"
     },  
@@ -60,7 +60,7 @@ bakery_items = [
         "description": "induldge in the savory flavors of our chicken chow mein, a classic guyanese dish featuring tender chicken, crisp vegetables, and flavorful noodles stir-fried to perfection.",
         "category": "lunch",
         "vegan": False,
-        "image_url": "images/bread/chicken-chow-mein.jpeg",
+        "image_url": "images/lunch/chicken-chow-mein.jpeg",
         "sizes": {
             "small": 10.00,
             "large": 14.00
@@ -71,7 +71,7 @@ bakery_items = [
         "description": "savor the rich and comforting flavors of our stew chicken, a beloved guyanese classic. succulent chicken pieces simmered in a flavorful blend of herbs, spices, and hearty gravy until tender and juicy. perfectly paired with rice or roti, this dish is sure to satisfy your cravings and warm your soul.",
         "category": "lunch",
         "vegan": False,
-        "image_url": "images/bread/stew-chicken.jpeg",
+        "image_url": "images/lunch/stew-chicken.jpeg",
         "sizes": {
             "small": 10.00,
             "large": 14.00
@@ -82,7 +82,7 @@ bakery_items = [
         "description": "indulge in the rich and aromatic flavors of our curry goat, a traditional caribbean delicacy slow-cooked to tender perfection in a fragrant blend of spices. served alongside fluffy white rice, this hearty dish promises a satisfying culinary experience that will transport you to the vibrant streets of the caribbean.",
         "category": "lunch",
         "vegan": False,
-        "image_url": "images/bread/curry-goat.jpeg",
+        "image_url": "images/lunch/curry-goat.jpeg",
         "sizes": {
             "small": 11.00,
             "large": 15.00
@@ -93,7 +93,7 @@ bakery_items = [
         "description": "savor the irresistible taste of our curry chicken, a savory delight infused with aromatic spices and slow-cooked to perfection. tender chicken pieces simmered in a rich curry sauce, this dish offers a bust of flavors with every bite. paired with white rice or roti, it's classic meal that will tantalize your taste buds.",
         "category": "lunch",
         "vegan": False,
-        "image_url": "images/bread/curry-chicken.jpeg",
+        "image_url": "images/lunch/curry-chicken.jpeg",
         "sizes": {
             "small": 10.00,
             "large": 14.00
@@ -104,7 +104,7 @@ bakery_items = [
         "description": "savor the flavors of this one-pot meal. Tender pieces of chicken simmered with fragrant herbs and spices, combined with rice, red beans, and vegetables. This traditional meal is a beloved favorite among guyanese cuisine enthusiasts.",
         "category": "lunch",
         "vegan": False,
-        "image_url": "images/bread/chicken-rice-peas.jpeg",
+        "image_url": "images/lunch/chicken-rice-peas.jpeg",
         "sizes": {
             "small": 9.00,
             "large": 13.00
@@ -115,7 +115,7 @@ bakery_items = [
         "description": "dive into the delightful flavors of our karela chicken, a tantalizing dish that combines tender chicken pieces with the unique taste of corilla, aka bitter melon. if you enjoy exotic foods, with an interesting texture, this is for you.",
         "category": "lunch",
         "vegan": False,
-        "image_url": "images/bread/karela-chicken.jpeg",
+        "image_url": "images/lunch/karela-chicken.jpeg",
         "sizes": {
             "small": 10.00,
             "large": 14.00
@@ -126,7 +126,7 @@ bakery_items = [
         "description": "guyanese pumpkin is offers a balance of savor and sweet flavors, complemented by the smooth texture of fresh pumplin. Simmered in rich pumpkin sauce, infused with aromatic spices and herbs and tender pieces of simmered chicken.",
         "category": "lunch",
         "vegan": False,
-        "image_url": "images/bread/pumpkin-chicken.jpeg",
+        "image_url": "images/lunch/pumpkin-chicken.jpeg",
         "sizes": {
             "small": 10.00,
             "large": 14.00
@@ -137,7 +137,7 @@ bakery_items = [
         "description": "indulge in the tantalizing flavors of our spinach and chicken. tender pieces of chicken accompanied by fresh spinach, seasoned to perfection with aromatic spices. this classic traditional guyanese meal is both nutritious and delicious.",
         "category": "lunch",
         "vegan": False,
-        "image_url": "images/bread/spinach-chicken.jpeg",
+        "image_url": "images/lunch/spinach-chicken.jpeg",
         "sizes": {
             "small": 10.00,
             "large": 14.00
@@ -148,7 +148,7 @@ bakery_items = [
         "description": "delight in the savory spinach and saltfish dish, a perfect combination of tender salted codfish and leaf green spinach. fully cooked, this traditional guyanese dish pairs well with rice. For an experimental twist, try it with your favorite guyanese bake or roti or puri.",
         "category": "lunch",
         "vegan": False,
-        "image_url": "images/bread/spinach-saltfish.jpeg",
+        "image_url": "images/lunch/spinach-saltfish.jpeg",
         "sizes": {
             "small": 10.00,
             "large": 14.00
@@ -159,10 +159,39 @@ bakery_items = [
         "description": "savor the flavors of our dhall and saltfish with rice. This traditional guyanese dish features a savory salted fish, tender lentils, and aromatic spices, served alongside white rice. This one truly embodies the rich culinary heritage of guyana.",
         "category": "lunch",
         "vegan": False,
-        "image_url": "images/bread/dhall-saltfish.jpeg",
+        "image_url": "images/lunch/dhall-fish.jpeg",
         "sizes": {
             "small": 11.00,
             "large": 15.00
         }
+    },
+    {
+        "name": "Sago Porridge",
+        "description": "discover the comforting warmth of our sago porridge. made from delicate sago pearls cooked to perfection in creamy coconut milk, it's a delightful blend of sweetness and texture, perfect for a cozy morning or soothing evening treat.",
+        "price": 4.00,
+        "category": "breakfast",
+        "vegan": False,
+        "image_url": "images/bread/sago-porridge.jpeg"
+    },
+    {
+        "name": "Bake and Saltfish",
+        "description": "indulge in the savory delight of our bake and saltfish. A classic caribbean dish featuring flaky, seasoned fish served with freshly fried baked bread. It's a hearty breakfast bursting with flavor.",
+        "price": 4.00,
+        "category": "breakfast",
+        "vegan": False,
+        "image_url": "images/bread/bake-saltfish.jpeg"
     }, 
 ]
+
+"""
+{
+        "name": "Bake and Saltfish",
+        "description": "indulge in the savory delight of our bake and saltfish. A classic caribbean dish featuring flaky, seasoned fish served with freshly fried baked bread. It's a hearty breakfast bursting with flavor.",
+        "price": 4.00,
+        "category": "breakfast",
+        "vegan": False,
+        "image_url": "images/bread/bake-saltfish.jpeg"
+    }, 
+
+
+"""

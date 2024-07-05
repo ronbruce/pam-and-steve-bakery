@@ -1,17 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <section>
-        <header>
-            <h2>{{ breakfast_title }}</h2>
-        </header>
+<section>
+    <header>
+        <h2>{{ breakfast_title }}</h2>
+    </header>
+        {% for item in breakfast_items %}
         <article>
-            <img src="{{ url_for('static', filename='images/breakfast/bake-saltfish.jpeg') }}" alt="indulge in the savory delight of our bake and saltfish. A classic caribbean dish featuring flaky, seasoned fish served with freshly fried baked bread. It's a hearty breakfast bursting with flavor." width="300">
-            <p>bake and saltfish</p>
+            <img src="{{ url_for('static', filename=item.image_url) }}" alt="{{ item.description }}" width="300">
+            <p>{{ item.name }}</p>
+            <p>{{ item.description }}</p>
+            <p>${{ item.price }}</p>
         </article>
-        <article>
-            <img src="{{ url_for('static', filename='images/breakfast/sago-porridge.jpeg') }}" alt="discover the comforting warmth of our sago porridge. made from delicate sago pearls cooked to perfection in creamy coconut milk, it's a delightful blend of sweetness and texture, perfect for a cozy morning or soothing evening treat." width="300">
-            <p>sago porridge</p>
-        </article>
-    </section>
+        {% endfor %}
+</section>
 {% endblock %}
+

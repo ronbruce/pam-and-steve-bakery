@@ -28,6 +28,24 @@ body {
     background-color: var(--bg-color);
 }
 
+/* buttons */
+.btn {
+    text-align: center;
+    display: inline-block; /* this is so my button won't turn into a block element.I want to give it the illusion of a block element */  
+    background-color: var(--btn-color);
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    padding: 0.8rem 2.5rem;
+    margin-top: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    color: #689F38;
+}
+
 /* All elements in the header */
 .header {
     background-color: var(--bg-color);
@@ -146,12 +164,16 @@ body {
 .cart-items-container {
     position: absolute;
     top: 100%;
-    right: 0;
-    width: 50rem;
+    right: -100%; /* makes cart-item container invisible. This is for the click cart feature. */
+    width: 42rem;
     background-color: #fff;
     height: 88vh;
-    border: solid 1px black; /* border just to see where the container ends */
+    /* border: solid 1px black; border just to see where the container ends */
     padding: 0.8rem;
+}
+
+.cart-items-container.active {
+    right: 0;
 }
 
 /* items in the cart */
@@ -183,3 +205,45 @@ body {
 .cart-item span:hover {
     color: var(--main-color);
 }
+/* Text of the cart-item name. E.g. 'Whole Wheat Bread' */
+.cart-item h3 {
+    font-size: 1.4rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.price {
+    font-size: 1.3rem;
+    color: black;
+    padding-bottom: 0.5rem;
+}
+
+/* Home/Hero Section */
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    background-image: url('/images/bread-for-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero {
+    width: 60rem; /* 60 is equal to 600 pixels. This wraps the text line after line instead of being in one line. */
+}
+
+.hero h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 3.2rem;
+    padding: 1rem 0;
+    color: #eee;
+}
+

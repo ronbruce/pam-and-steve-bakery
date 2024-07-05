@@ -1,53 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <section>
-        <header>
-            <h2>{{ lunch_title }}</h2>
-        </header>
+<section>
+    <header>
+        <h2>{{ lunch_title }}</h2>
+    </header>
+        {% for item in lunch_items %}
         <article>
-            <img src="{{ url_for('static', filename='images/lunch/chicken-feet-soup.jpeg') }}" alt="a white bowl filled with chicken foot soup. the soup has corn, carrots and green onions." width="300">
-            <p>chicken foot soup</p>
+            <img src="{{ url_for('static', filename=item.image_url) }}" alt="{{ item.description }}" width="300">
+            <p>{{ item.name }}</p>
+            <p>{{ item.description }}</p>
+            <p>small${{ item.sizes.small }}</p>
+            <p>large${{ item.sizes.large }}</p>
         </article>
-        <article>
-            <img src="{{ url_for('static', filename='images/lunch/karela-chicken.jpeg') }}" alt="a bowl filled with guyanese bitter melon, aka karela, diced in a bowl over white rice with red peppers chicken." width="300">
-            <p>karela (bitter melon) and chicken</p>
-        </article>
-        <article>
-            <img src="{{ url_for('static', filename='images/lunch/spinach-saltfish.jpeg') }}" alt="spinach and saltfish over rice in a grey bowl sitting on a table with a fork, spices, lemon, and spinach leaves." width="300">
-            <p>spinach and saltfish</p>
-        </article>
-        <article>
-            <img src="{{ url_for('static', filename='images/lunch/pumpkin-chicken.jpeg') }}" alt="chicken and pumpkin over white rice in a brown bowl sitting on a brown table cloth on a table." width="300">
-            <p>pumpkin and chicken</p>
-        </article>
-        <article>
-            <img src="{{ url_for('static', filename='images/lunch/curry-cabbage-chicken.jpeg') }}" alt="chicken and pumpkin over white rice in a brown bowl sitting on a brown table cloth on a table." width="300">
-            <p>curry cabbage and chicken</p>
-        </article>
-        <article>
-            <img src="{{ url_for('static', filename='images/lunch/okra-saltfish.jpeg') }}" alt="okra and saltfish over white rice in a brown bowl." width="300">
-            <p>okra and saltfish</p>
-        </article>
-        <article>
-            <img src="{{ url_for('static', filename='images/lunch/bora-chicken.jpeg') }}" alt="Bora (long beans) and chicken over white rice on a beige table cloth." width="300">
-            <p>bora and chicken</p>
-        </article>
-        <article>
-            <img src="{{ url_for('static', filename='images/lunch/curry-goat.jpeg') }}" alt="curry goat with potatoes, red peppers and green onions over white rice in a brown bowl sitting on a table cloth." width="300">
-            <p>curry goat</p>
-        </article>
-        <article>
-            <img src="{{ url_for('static', filename='images/lunch/chicken-rice-peas.jpeg') }}" alt="a bowl of red beans, seasoned chicken over brown rice in a brown bowl." width="300">
-            <p>cook up</p>
-        </article>
-        <article>
-            <img src="{{ url_for('static', filename='images/lunch/curry-chicken.jpeg') }}" alt="a bowl of curry chicken, red peppers, yellow peppers, green peppers over white rice in a grey bowl." width="300">
-            <p>curry chicken</p>
-        </article>
-        <article>
-            <img src="{{ url_for('static', filename='images/lunch/stew-fish.jpeg') }}" alt="a bowl of stew fish filled with red peppers, asparagus, a slice of lime and fish over white rice.." width="300">
-            <p>stew fish</p>
-        </article>
-    </section>
+        {% endfor %}
+</section>
 {% endblock %}

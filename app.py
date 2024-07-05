@@ -6,7 +6,6 @@ from data import bakery_items
 # Connect data.py to app.py.✅
 # Insert data into bakery_database ✅
 # Display data dynamically from data.py unto my web pages in template.✅
-# Format items in the cart using video.
 # Follow along with documentation to import any other data, or CRUD operation. 
 app = Flask(__name__,
             static_url_path='',
@@ -47,17 +46,20 @@ def index():
 @app.route('/menu/bread')
 def bread():
     bread_title = "bread"
-    return render_template("menu/bread.html", bread_title=bread_title)
+    bread_items = [item for item in bakery_items if item['category'] == 'bread'] # Filter the bread items for the 'bread' category
+    return render_template("menu/bread.html", bread_title=bread_title, bread_items=bread_items)
 
 @app.route('/menu/breakfast')
 def breakfast():
     breakfast_title = "breakfast"
-    return render_template("menu/breakfast.html", breakfast_title=breakfast_title)
+    breakfast_items = [item for item in bakery_items if ['category'] == 'breakfast']
+    return render_template("menu/breakfast.html", breakfast_title=breakfast_title, breakfast_items=breakfast_items)
 
 @app.route('/menu/lunch')
 def lunch():
     lunch_title = "lunch"
-    return render_template("menu/lunch.html", lunch_title=lunch_title)
+    lunch_items = [item for item in bakery_items if item['category'] == 'lunch']
+    return render_template("menu/lunch.html", lunch_title=lunch_title, lunch_items=lunch_items)
 
 @app.route('/menu/snacks')
 def snacks():
