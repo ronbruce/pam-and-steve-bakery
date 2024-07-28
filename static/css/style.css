@@ -97,6 +97,16 @@ body {
     display: none; /* menu icons set to none because I only want to display this icons on a tablet or smartphone and not one  browser */
 }
 
+/* Carot down icon animation */
+.fas.fa-angle-down {
+    transition: transform 0.3s ease;
+}
+
+/* Rotate the caret 180 degrees on hover */
+.menu-dropdown:hover .fas.fa-angle-down {
+    transform: rotate(180deg);
+}
+
 /* Dropdown menu with breakfast, snacks, lunch, etc. */
 .menu-dropdown {
     position: relative; /* position my menu with the carot down inline with the other anchor elements in my navbar */

@@ -23,7 +23,7 @@
                     <a href="/menu/snacks">snacks</a>
                     <a href="/menu/bread">bread</a>
                     <a href="/menu/pastries">pastries</a>
-                    <a href="/menu/sweetsTreats">sweats & treats</a>
+                    <a href="/menu/sweetsTreats">sweets & treats</a>
                     <a href="/menu/drinks">drinks</a>
                 </div>
             </div>
@@ -78,5 +78,18 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '65d91426a7b7a3e703cab951' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script>
 </body>
 </html>

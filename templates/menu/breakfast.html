@@ -1,18 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<section>
-    <header>
-        <h2>{{ breakfast_title }}</h2>
-    </header>
-        {% for item in breakfast_items %}
-        <article>
-            <img src="{{ url_for('static', filename=item.image_url) }}" alt="{{ item.description }}" width="300">
-            <p>{{ item.name }}</p>
-            <p>{{ item.description }}</p>
-            <p>${{ item.price }}</p>
-        </article>
-        {% endfor %}
-</section>
+    <section>
+        <header>
+            <h2>{{ breakfast_title }}</h2>
+        </header>
+            {% for item in breakfast_items %}
+            <article>
+                <img src="{{ url_for('static', filename=item.image_url) }}" alt="{{ item.description }}" width="300">
+                <p>{{ item.name }}</p>
+                <p>{{ item.description }}</p>
+                <p>${{ item.price }}</p>
+            </article>
+            {% endfor %}
+    </section>
 {% endblock %}
 

@@ -5,13 +5,15 @@
         <header>
             <h2>{{ snacks_title }}</h2>
         </header>
-        <article>
-            <img src="{{ url_for('static', filename='images/snacks/plantain-chips.jpeg') }}" alt="Yellow circular cut baked plantain chips sprinkled with salt on a cutting brown cutting board." width="300">
-            <p>plantain chips</p>
-        </article>
-        <article>
-            <img src="{{ url_for('static', filename='images/snacks/channa.jpeg') }}" alt="a black bowl filled with channa, sprinkled with green onions and red pepper." width="300">
-            <p>channa</p>
-        </article>
+            {% for item in snacks_items %}
+            <article>
+                <img src="{{ url_for('static', filename=item.image_url) }}" alt="{{ item.description }}" width="300">
+                <p>{{ item.name }}</p>
+                <p>{{ item.description }}</p>
+                <p>${{ item.price }}</p>
+            </article>
+            {% endfor %}
     </section>
 {% endblock %}
+
+

@@ -52,7 +52,7 @@ def bread():
 @app.route('/menu/breakfast')
 def breakfast():
     breakfast_title = "breakfast"
-    breakfast_items = [item for item in bakery_items if ['category'] == 'breakfast']
+    breakfast_items = [item for item in bakery_items if item['category'] == 'breakfast']
     return render_template("menu/breakfast.html", breakfast_title=breakfast_title, breakfast_items=breakfast_items)
 
 @app.route('/menu/lunch')
@@ -64,22 +64,26 @@ def lunch():
 @app.route('/menu/snacks')
 def snacks():
     snacks_title = "snacks"
-    return render_template("menu/snacks.html", snacks_title=snacks_title)
+    snacks_items = [item for item in bakery_items if item['category'] == 'snacks']
+    return render_template("menu/snacks.html", snacks_title=snacks_title, snacks_items=snacks_items)
 
 @app.route('/menu/pastries')
 def pastries():
     pastries_title = "pastries"
-    return render_template("menu/pastries.html", pastries_title=pastries_title)
+    pastries_items = [item for item in bakery_items if item['category'] == 'pastries']
+    return render_template("menu/pastries.html", pastries_title=pastries_title, pastries_items=pastries_items)
 
 @app.route('/menu/sweetsTreats')
 def sweetsTreats():
-    sweets_treats_title = "sweets & treats"
-    return render_template("menu/sweetsTreats.html", sweets_treats_title=sweets_treats_title)
+    sweetsTreats_title = "sweets & treats"
+    sweetsTreats_items = [item for item in bakery_items if item['category'] == 'sweetsTreats']
+    return render_template("menu/sweetsTreats.html", sweetsTreats_title=sweetsTreats_title, sweetsTreats_items=sweetsTreats_items)
 
 @app.route('/menu/drinks')
 def drinks():
     drinks_title = "drinks"
-    return render_template("menu/drinks.html", drinks_title=drinks_title)
+    drinks_items = [item for item in bakery_items if item['category'] == 'drinks']
+    return render_template("menu/drinks.html", drinks_title=drinks_title, drinks_items=drinks_items)
 
 @app.route('/footer/aboutUs')
 def aboutUs():
