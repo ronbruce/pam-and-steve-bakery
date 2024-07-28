@@ -358,33 +358,20 @@ bakery_items = [
         "image_url": "images/sweets-treats/sponge-cake.jpeg"
     }, 
     {
-    "name": "plantain chips",
-    "description": "Yellow circular cut baked plantain chips sprinkled with salt on a cutting brown cutting board.",
-    "price": 4.00,
-    "category": "snacks",
-    "vegan": True,
-    "image_url": "images/snacks/plantain-chips.jpeg"
+        "name": "plantain chips",
+        "description": "Yellow circular cut baked plantain chips sprinkled with salt on a cutting brown cutting board.",
+        "price": 4.00,
+        "category": "snacks",
+        "vegan": True,
+        "image_url": "images/snacks/plantain-chips.jpeg"
     }, 
     {
-    "name": "channa",
-    "description": "a black bowl filled with channa, sprinkled with green onions and red pepper.",
-    "price": 7.00,
-    "category": "snacks",
-    "vegan": True,
-    "image_url": "images/snacks/channa.jpeg"
+        "name": "channa",
+        "description": "a black bowl filled with channa, sprinkled with green onions and red pepper.",
+        "price": 7.00,
+        "category": "snacks",
+        "vegan": True,
+        "image_url": "images/snacks/channa.jpeg"
     }
-
-
-
-
-
-
-     
-
-
-
-
-
-
 ]
 
